@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .container {
+        position: relative;
+      }
+
+      .background-img {
+        position: absolute;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        left: -6px;
+        top: 388px;
+        /* z-index: -1; */
+      }
+
+      .side-img {
+        position: absolute;
+        /* width: 565px;
+        height: 565px; */
+        right: 0px;
+        top: 0px;
+        /* z-index: -1; */
+      }
+
+      .center {
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .logo {
+        /* margin-top: 10px; */
+        margin-bottom: 40px;
+      }
+
+      .logo img {
+        width: 236px;
+        height: 98px;
+      }
+
+      .form {
+        padding: 20px;
+      }
+
+      .form-text {
+        color: #000;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 14-px;
+        margin-top: 40px;
+      }
+
+      .form-section {
+        width: 713px;
+        height: 450px;
+        left: 363px;
+        top: 287px;
+        margin: 0 auto;
+        background-color: #f7fff3;
+        text-align: center;
+        border: 1px solid #c6eb8b;
+        border-radius: 25px;
+
+        border-radius: 33px;
+        border: 1px solid #c6eb8b;
+      }
+
+      .form-section table {
+        display: inline-block;
+      }
+
+      #lname {
+        margin-bottom: 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+      }
+
+      .lable {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      .input {
+        border: 1px solid #c6eb8b;
+        width: 309px;
+        height: 50px;
+        left: 688px;
+        top: 437px;
+        border-radius: 15px;
+      }
+
+      .btn-container {
+        text-align: center;
+      }
+
+      .continue-btn {
+        border: none;
+        width: 197px;
+        height: 47px;
+        border-radius: 23px;
+        margin-top: 50px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      .text {
+        width: 100%;
+        text-align: left;
+        padding: 20px 0;
+      }
+
+      .info {
+        text-align: right;
+        width: 100%;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="background-img center" src="img/ellipse.svg" />
+    <img class="side-img" src="img/Pexels Photo by fauxels.svg" />
+    <section class="container">
+      <div class="logo center">
+        <img
+          src="img/Wealth Logo with Tagline No background 1.svg"
+          alt="Logo image"
+          class="logo"
+        />
+      </div>
+      <div class="form-section">
+        <form class="form">
+          <p class="form-text font">Your Name as per your PAN Card &#58;</p>
+          <div class="grid">
+            <div class="text">
+              <label class="lable" for="fname">First Name &#58; </label>
+            </div>
+            <div class="info">
+              <input type="text" class="input" id="fname" name="fname" />
+            </div>
+            <div class="text">
+              <label class="lable" for="mname">Middle Name &#58; </label>
+            </div>
+            <div class="info">
+              <input type="input" class="input" id="mname" name="mname" />
+            </div>
+            <div class="text">
+              <lable class="lable" for="lname">Last Name &#58; </lable>
+            </div>
+            <div class="info">
+              <input type="text" class="input" id="lname" name="lname" />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="btn-container">
+        <button class="continue-btn">Continue</button>
+      </div>
+    </section>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
